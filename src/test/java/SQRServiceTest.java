@@ -7,7 +7,7 @@ public class SQRServiceTest {
     public void test1() {
         SQRService sqrService = new SQRService();
 
-        long actual = sqrService.calculate(10, 99, 100, 121);
+        long actual = sqrService.calculate(100, 121);
         int expected = 2;
 
         Assertions.assertEquals(expected, actual);
@@ -17,8 +17,8 @@ public class SQRServiceTest {
     public void test2() {
         SQRService sqrService = new SQRService();
 
-        long actual = sqrService.calculate(1, 10, 90, 100);
-        int expected = 1;
+        long actual = sqrService.calculate(300, 400);
+        int expected = 3;
 
         Assertions.assertEquals(expected, actual);
     }
